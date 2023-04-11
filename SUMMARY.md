@@ -14,6 +14,6 @@
 ## guards
 
 * [Object.prototype.toString()](guards/object.prototype.tostring.md)
-* [Primitive](guards/primitive.md)
+* [Primitive, object](guards/primitive-object.md)
 * [Nullish(Nil)](guards/nullish-nil.md)
 * [Falsy, Truthy](guards/falsy-truthy.md)
