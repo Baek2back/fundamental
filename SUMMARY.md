@@ -17,3 +17,8 @@
 * [Primitive, object](guards/primitive-object.md)
 * [Nullish(Nil)](guards/nullish-nil.md)
 * [Falsy, Truthy](guards/falsy-truthy.md)
+
+## Array
+
+* [includes](array/includes.md)
+* [shuffle](array/shuffle.md)
