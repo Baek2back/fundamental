@@ -24,3 +24,8 @@
 * [shuffle](array/shuffle.md)
 * [countBy](array/countby.md)
 * [groupBy](array/groupby.md)
+
+## misc
+
+* [assert (invariant)](misc/assert-invariant.md)
+* [predicates](misc/predicates.md)
