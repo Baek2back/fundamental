@@ -22,3 +22,5 @@
 
 * [includes](array/includes.md)
 * [shuffle](array/shuffle.md)
+* [countBy](array/countby.md)
+* [groupBy](array/groupby.md)
