@@ -29,3 +29,4 @@
 
 * [assert (invariant)](misc/assert-invariant.md)
 * [predicates](misc/predicates.md)
+* [QueryString](misc/querystring.md)
