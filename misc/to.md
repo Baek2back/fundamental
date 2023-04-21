@@ -7,6 +7,7 @@
 // response -> [null, Error]
 
 function to<T, U = Error>(
+  promise: Promise<T>
 ): Promise<[U, undefined] | [null, T]> {
   return promise
     .then<[null, T]>((data: T) => [null, data])
@@ -16,12 +17,11 @@ function to<T, U = Error>(
 }
 
 
-(async () => {
-  const [error, response] = await to(findById(1));
+// ES2022 - Top Level Await
+const [error, response] = await to(findById(1));
   
-  if (error) { ... } // API 요청 시 에러가 발생한 상황
-  if (!response) { ... } // API 요청은 성공했으나 데이터가 없는 상황
-})();
+if (error) { ... } // API 요청 시 에러가 발생한 상황
+if (!response) { ... } // API 요청은 성공했으나 데이터가 없는 상황
 ```
 
 ### 참고 자료
