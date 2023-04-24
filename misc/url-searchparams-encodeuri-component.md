@@ -76,18 +76,18 @@ encodeURI(set);          // ";/?:@&=+$,#"
 encodeURIComponent(set); // "%3B%2C%2F%3F%3A%40%26%3D%2B%24%23"
 ```
 
-다만 encodeURI는 URL에 사용할 수 없는 문자만 인코딩하지만, encodeURIComponent는 예약 문자까지 모두 인코딩하는 차이가 존재한다.
+다만 `encodeURI`는 URL에 사용할 수 없는 문자만 인코딩하지만, `encodeURIComponent`는 예약 문자까지 모두 인코딩하는 차이가 존재한다.
 
 ```typescript
 `?q=${encodeURI("a&b")}`;          // "?q=a&b"
 `?q=${encodeURIComponent("a&b")}`; // "?q=a%26b"
 ```
 
-따라서 Query Parameter에 적용하는 경우에는 encodeURIComponent를 사용하는 것이 더 올바른 접근이다.
+따라서 Query Parameter에 적용하는 경우에는 `encodeURIComponent`를 사용하는 것이 더 올바른 접근이다.
 
 ### 정리
 
-URL, URLSearchParams는 모두 RFC 3986을 기반으로 동작하지만, encodeURI, encodeURIComponent 함수는 보다 이전 버전인 RFC 2396을 기반으로 하므로 기본적으로는 URL, URLSearchParams를 고려하는 것이 좋다.
+`URL`, `URLSearchParams`는 모두 RFC 3986을 기반으로 동작하지만, `encodeURI`, `encodeURIComponent` 함수는 보다 이전 버전인 RFC 2396을 기반으로 하므로 기본적으로는 `URL`, `URLSearchParams`를 고려하는 것이 좋다.
 
 ```typescript
 const url = new URL("https://example.com?q=1+2");
@@ -97,7 +97,7 @@ url.searchParams.get("q"); // "1 2"
 new URLSearchParams("q=1+2").get("q"); // "1 2"
 ```
 
-다만 URLSearchParams은 + 기호를 공백(space)로 해석하기 때문에 문제를 발생시킬 수 있으므로 보다 안전하게 사용하기 위해서는 encodeURIComponent를 확장하여 RFC 2396 → RFC 3986을 충족시킬 수 있게끔 만드는 것도 고려하자.
+다만 `URLSearchParams`은 **`+` 기호를 공백(space)로 해석**하기 때문에 문제를 발생시킬 수 있으므로 보다 안전하게 사용하기 위해서는 `encodeURIComponent`를 확장하여 RFC 2396 → RFC 3986을 충족시킬 수 있게끔 만드는 것도 고려하자.
 
 ```typescript
 function encodeRFC3986URIComponent(value: string) {
