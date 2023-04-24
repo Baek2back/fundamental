@@ -29,5 +29,5 @@
 
 * [assert (invariant)](misc/assert-invariant.md)
 * [predicates](misc/predicates.md)
-* [QueryString](misc/querystring.md)
+* [URL(SearchParams), encodeURI(Component)](misc/url-searchparams-encodeuri-component.md)
 * [to](misc/to.md)
