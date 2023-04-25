@@ -31,3 +31,7 @@
 * [predicates](misc/predicates.md)
 * [URL(SearchParams), encodeURI(Component)](misc/url-searchparams-encodeuri-component.md)
 * [to](misc/to.md)
+
+## types
+
+* [UnionToIntersection](types/uniontointersection.md)
