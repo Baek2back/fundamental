@@ -40,3 +40,4 @@
 
 * [useIsomorphicLayoutEffect](hooks/useisomorphiclayouteffect.md)
 * [useEvent](hooks/useevent.md)
+* [useHydrated](hooks/usehydrated.md)
