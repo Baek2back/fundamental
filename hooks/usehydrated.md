@@ -25,10 +25,10 @@ function ClientOnly({
 }
 ```
 
-* useEffect는 hydration이 끝나기 전에는 호출되지 않는다는 것이 보장되는 것을 이용해, hydration이 종료된 이후의 동작을 제어해야 하는 경우 사용할 수 있다.
-  * Server-Side Rendering -> hydrated는 항상 false를 반환한다.
-  * Client-Side Rendering -> hydrated는 첫번째 렌더링 시에는 항상 false를 반환하고, 그 이후에는 항상 true를 반환한다.
-* hydration 이후의 동작을 제어하는 대신 컴포넌트의 노출 여부를 결정하려면 \<ClientOnly /> 형태로 추상화된 컴포넌트의 사용을 고려할 수도 있다.
+* `useEffect`는 hydration이 끝나기 전에는 호출되지 않는다는 것이 보장되는 것을 이용해, hydration이 종료된 이후의 동작을 제어해야 하는 경우 사용할 수 있다.
+  * **Server-Side Rendering** -> `hydrated`는 항상 `false`를 반환한다.
+  * **Client-Side Rendering** -> `hydrated`는 첫번째 렌더링 시에는 항상 `false`를 반환하고, 그 이후에는 항상 `true`를 반환한다.
+* hydration 이후의 동작을 제어하는 대신 컴포넌트의 노출 여부를 결정하려면 `<ClientOnly />` 형태로 추상화된 컴포넌트의 사용을 고려할 수도 있다.
 
 ```typescript
 import type { ComponentProps } from 'react';
@@ -49,7 +49,7 @@ const Page = () => {
       <Chart />
     </ClientOnly>
     <Button onClick={handleRefreshChart} />
-  )
+  );
 };
 ```
 
