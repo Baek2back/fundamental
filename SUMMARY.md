@@ -5,6 +5,7 @@
 ## Function
 
 * [once](function/once.md)
+* [chain](function/chain.md)
 
 ## Object
 
