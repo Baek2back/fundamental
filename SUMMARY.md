@@ -43,3 +43,7 @@
 * [useEvent](hooks/useevent.md)
 * [useHydrated](hooks/usehydrated.md)
 * [useControllableState](hooks/usecontrollablestate.md)
+
+## react utils
+
+* [mergeProps](react-utils/mergeprops.md)
