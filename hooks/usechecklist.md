@@ -47,7 +47,7 @@ export function useCheckList<T extends ListItem>(
             }))
           );
         },
-        toggle: (id: T["id"]) => {
+        toggle: (id) => {
           actions.set((currentList) =>
             currentList.map((item) => ({
               ...item,
