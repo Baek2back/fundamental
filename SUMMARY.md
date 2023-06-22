@@ -47,4 +47,5 @@
 
 ## react utils
 
+* [mergeRefs](react-utils/mergerefs.md)
 * [mergeProps](react-utils/mergeprops.md)
