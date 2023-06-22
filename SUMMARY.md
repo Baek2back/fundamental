@@ -44,6 +44,7 @@
 * [useEvent](hooks/useevent.md)
 * [useHydrated](hooks/usehydrated.md)
 * [useControllableState](hooks/usecontrollablestate.md)
+* [useList](hooks/uselist.md)
 
 ## react utils
 
