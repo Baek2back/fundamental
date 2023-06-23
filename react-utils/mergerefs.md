@@ -33,6 +33,7 @@ function mergeRefs<T = any>(
 ### 참고 자료
 
 * [Merging refs](https://dev.to/thekashey/merging-refs-41l8)
+* [https://github.com/radix-ui/primitives/blob/main/packages/react/compose-refs/src/composeRefs.tsx](https://github.com/radix-ui/primitives/blob/main/packages/react/compose-refs/src/composeRefs.tsx)
 * [https://github.com/theKashey/use-callback-ref](https://github.com/theKashey/use-callback-ref)
 * [react-merge-refs/index.tsx at main · gregberge/react-merge-refs](https://github.com/gregberge/react-merge-refs/blob/main/src/index.tsx)
 * [nextui/packages/react/src/utils/refs.ts at main · nextui-org/nextui](https://github.com/nextui-org/nextui/blob/main/packages/react/src/utils/refs.ts)
